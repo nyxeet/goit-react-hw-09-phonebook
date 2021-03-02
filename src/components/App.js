@@ -28,14 +28,14 @@ const App = () => {
           exact
           redirectTo="/contacts"
           component={RegisterView}
-        ></PublicRoute>
+        />
         <PublicRoute
           path="/login"
           restricted
           exact
           redirectTo="/contacts"
           component={LoginView}
-        ></PublicRoute>
+        />
         <PrivateRoute
           path="/contacts"
           redirectTo="/login"
